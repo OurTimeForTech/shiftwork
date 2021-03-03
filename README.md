@@ -16,8 +16,8 @@ The app is engineered by the fellows of Our Time For Tech's CodeCollab track. Th
 
 ### Meet the Fellows of CodeCollab Cycle 2
 
-**Fake Name**: *Short Blurb about Fake Name. Short Blurb about Fake Name. Short Blurb about Fake Name. Short Blurb about Fake Name. Short Blurb about Fake Name.*
-[Twitter](https://twitter.com) | [Blog](https://arit.dev) | [GitHub](https://github.com)
+**Carla Dos Santos*: * I am a Software Engineer for Web and Mobile Applications.*
+[Twitter](https://twitter.com/carladotsantos) | [Blog](https://dev.to/cclics) | [GitHub](https://github.com/cclics)
 
 **Fake Name**: *Short Blurb about Fake Name. Short Blurb about Fake Name. Short Blurb about Fake Name. Short Blurb about Fake Name. Short Blurb about Fake Name.*
 [Twitter](https://twitter.com) | [Blog](https://arit.dev) | [GitHub](https://github.com)
