@@ -1,5 +1,6 @@
 class OrganizationsController < ApplicationController
   before_action :set_organization, only: %i[ show edit update destroy ]
+  rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
 
   # GET /organizations or /organizations.json
   def index
@@ -60,6 +61,7 @@ class OrganizationsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_organization
       @organization = Organization.find(params[:id])
+      raise ActiveRecord::RecordNotFound unless @organization
     end
 
     # Only allow a list of trusted parameters through.
