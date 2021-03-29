@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 2021_03_25_053812) do
   enable_extension "plpgsql"
 
   create_table "organizations", force: :cascade do |t|
-    t.string "org_name", null: false
+    t.string "org_name"
     t.string "org_address"
-    t.string "org_city", null: false
-    t.string "org_state", null: false
+    t.string "org_city"
+    t.string "org_state"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
