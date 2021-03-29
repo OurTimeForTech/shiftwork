@@ -18,6 +18,7 @@ class OrganizationsController < ApplicationController
 
   # GET /organizations/1/edit
   def edit
+    # TODO: Only users who own the org can edit it
   end
 
   # POST /organizations or /organizations.json
