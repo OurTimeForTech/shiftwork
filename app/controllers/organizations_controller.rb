@@ -67,6 +67,6 @@ class OrganizationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def organization_params
-      params.require(:organization).permit(:org_name, :org_address, :org_city, :org_state)
+      params.require(:organization).permit(:org_name, :org_address, :org_city, :org_state, :org_description)
     end
 end
