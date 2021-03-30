@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_03_29_220820) do
     t.integer "shift_pay"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "description"
   end
 
   create_table "users", force: :cascade do |t|
