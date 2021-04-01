@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_26_163716) do
+ActiveRecord::Schema.define(version: 2021_04_01_032324) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "shifts", force: :cascade do |t|
     t.boolean "shift_status"
-    t.string "role_name"
-    t.datetime "shift_start"
-    t.datetime "shift_end"
-    t.integer "shift_pay"
+    t.string "role_name", null: false
+    t.datetime "shift_start", null: false
+    t.datetime "shift_end", null: false
+    t.integer "shift_pay", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "description"
