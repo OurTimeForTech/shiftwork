@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_26_163716) do
+ActiveRecord::Schema.define(version: 2021_03_29_220820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "organizations", force: :cascade do |t|
+    t.string "org_name"
+    t.string "org_address"
+    t.string "org_city"
+    t.string "org_state"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "org_description"
+  end
 
   create_table "shifts", force: :cascade do |t|
     t.boolean "shift_status"
