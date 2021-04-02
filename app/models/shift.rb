@@ -8,8 +8,8 @@ class Shift < ApplicationRecord
   validate :end_date_after_start_date?
 
   def end_date_after_start_date?
-    if shift_end < shift_start
-      errors.add :shift_end, "shift must end after shift start"
+    if shift_end < shift_start + 3600
+      errors.add :shift_end, "shift must end at least an hour after shift start"
     end
   end
 end
