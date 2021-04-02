@@ -3,7 +3,7 @@ class Shift < ApplicationRecord
   validates :shift_start, :presence => true
   validates :shift_end , :presence => true
   validates :shift_pay, :presence => true
-  validates_numericality_of :shift_pay, greater_than_or_equal_to: 0.00
+  validates_numericality_of :shift_pay, greater_than: 0.00
   
   validate :end_date_after_start_date?
 
