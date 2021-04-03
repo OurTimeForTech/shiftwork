@@ -30,6 +30,8 @@ gem "actionpack", ">= 6.0.3.5"
 
 gem "activerecord", ">= 6.0.3.5"
 
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
